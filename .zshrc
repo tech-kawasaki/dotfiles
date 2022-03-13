@@ -1,31 +1,4 @@
-export ZPLUG_HOME=/opt/homebrew/opt/zplug
 export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
-source $ZPLUG_HOME/init.zsh
-
-# テーマ
-zplug "themes/frisk", from:oh-my-zsh
-
-# 簡単にgitリポジトリのルートへcdする
-zplug "mollifier/cd-gitroot"
-
-zplug "b4b4r07/enhancd", use:init.sh
-
-zplug "zsh-users/zsh-syntax-highlighting", defer:2
-
-zplug "junegunn/fzf-bin", as:command, from:gh-r, rename-to:fzf
-
-zplug "tcnksm/docker-alias", use:zshrc, as:plugin
-
-# 未インストール項目をインストールする
-if ! zplug check --verbose; then
-    printf "Install? [y/N]: "
-    if read -q; then
-        echo; zplug install
-    fi
-fi
-
-# コマンドをリンクして、PATH に追加し、プラグインは読み込む
-zplug load --verbose
 
 alias ls='ls -G'
 alias ll='ls -l'
@@ -56,3 +29,6 @@ autoload -Uz compinit && compinit
 # passの補完
 fpath=( ~/.pass.zsh-completion "${fpath[@]}" )
 autoload -Uz .pass.zsh-completion
+
+# prompt
+source ~/.dotfiles/prompt
