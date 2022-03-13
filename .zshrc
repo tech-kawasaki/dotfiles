@@ -34,7 +34,7 @@ alias l='ls -lhAG'
 alias cp='cp -i'
 alias mv='mv -i'
 alias g='git'
-alias gt='git tree'
+alias gt="git log --graph --pretty=format:'%x09%C(auto) %h %Cgreen %ar %Creset%x09by\"%C(cyan ul)%an%Creset\" %x09%C(auto)%s %d'"
 alias gta='gt --all'
 alias gco='git checkout'
 alias gcb='git checkout -b'
