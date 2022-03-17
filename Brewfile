@@ -3,6 +3,8 @@ tap "homebrew/cask"
 tap "homebrew/core"
 # Emacs dependency management
 brew "cask"
+# Distributed revision control system
+brew "git"
 # HTTP/2 C Library
 brew "nghttp2"
 # Open source programming language to build simple/reliable/efficient software
@@ -15,8 +17,6 @@ brew "gradle"
 brew "openssh"
 # Password manager
 brew "pass"
-# Next-generation plugin manager for zsh
-brew "zplug"
 # Application launcher and productivity software
 cask "alfred"
 # Two-factor authentication software
