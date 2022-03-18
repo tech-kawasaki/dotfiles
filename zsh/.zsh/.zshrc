@@ -28,7 +28,8 @@ source $ZDOTDIR/aliases.zsh
 # +-----+
 # | Fzf |
 # +-----+
-source $ZDOTDIR/fzf_script.zsh
+source $ZDOTDIR/fzf_scripts.zsh
+[ -f $ZDOTDIR/.fzf.zsh ] && source $ZDOTDIR/.fzf.zsh
 
 # +-------+
 # | Other |

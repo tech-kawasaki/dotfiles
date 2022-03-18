@@ -12,11 +12,10 @@ alias gt="git log --graph --pretty=format:'%x09%C(auto) %h %Cgreen %ar %Creset%x
 alias gta='gt --all'
 alias gco='git checkout'
 alias gcb='git checkout -b'
+alias gcm='git commit -m'
 alias gs='git status'
 alias gsb='git status -b'
 alias gb='git branch'
-alias ggpull='git pull origin "$(git_current_branch)"'
-alias ggpush='git push origin "$(git_current_branch)"'
 alias gm='git merge'
 
 #docker

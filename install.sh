@@ -42,6 +42,9 @@ if ! (( $+commands[brew] )); then
     brew bundle
 
     brew cleanup
+
+    # Fzf
+    $(brew --prefix)/opt/fzf/install
 fi
 
 # +---------+
