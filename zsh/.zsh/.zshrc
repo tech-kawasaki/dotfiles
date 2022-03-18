@@ -1,23 +1,34 @@
-# completion
+# +------------+
+# | Completion |
+# +------------+
 autoload -Uz compinit && compinit
 
 setopt AUTO_PUSHD           # Push the current directory visited on the stack.
 setopt PUSHD_IGNORE_DUPS    # Do not store duplicates in the stack.
 setopt PUSHD_SILENT         # Do not print the directory stack after pushd or popd.
 
-# plugins
+source $ZDOTDIR/completion
+
+# +---------+
+# | Plugins |
+# +---------+
 fpath=(${ZDOTDIR}/plugins/zsh-completions/src $fpath)
 source ${ZDOTDIR}/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
-# prompt
+# +--------+
+# | Prompt |
+# +--------+
 source $ZDOTDIR/prompt
 
-# alias
+# +-------+
+# | Alias |
+# +-------+
 source $ZDOTDIR/aliases
 
-# completion
-source $ZDOTDIR/completion
 
+# +-------+
+# | Other |
+# +-------+
 if test -n "$(git -C ${DOTDIR} status --porcelain)" ||
    ! git -C ${DOTDIR} diff --exit-code --stat --cached origin/main > /dev/null ; then
   echo -e "\e[36m=== DOTFILES IS DIRTY ===\e[m"

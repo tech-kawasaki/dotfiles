@@ -1,6 +1,8 @@
 #!/bin/zsh
 
-# clone repository
+# +------------------+
+# | Clone repository |
+# +------------------+
 DOTDIR="${HOME}/.dotfiles"
 GITHUB_URL="https://github.com/tech-kawasaki/dotfiles.git"
 
@@ -13,13 +15,17 @@ if [[ ! -d ${DOTDIR} ]]; then
     fi
 fi
 
-# xcode
+# +-------+
+# | Xcode |
+# +-------+
 if ! (( $+commands[xcode-select] )); then
     echo "installing xcode-select ..."
     xcode-select --install
 fi
 
-# homebrew
+# +----------+
+# | Homebrew |
+# +----------+
 if ! (( $+commands[brew] )); then
     echo "installing Homebrew ..."
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
@@ -38,7 +44,9 @@ if ! (( $+commands[brew] )); then
     brew cleanup
 fi
 
-# symlink
+# +---------+
+# | Symlink |
+# +---------+
 if ! (( $+commands[stow] )); then
     echo "installing GNU Stow ..."
     brew install stow
