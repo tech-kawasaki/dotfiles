@@ -7,7 +7,7 @@ setopt AUTO_PUSHD           # Push the current directory visited on the stack.
 setopt PUSHD_IGNORE_DUPS    # Do not store duplicates in the stack.
 setopt PUSHD_SILENT         # Do not print the directory stack after pushd or popd.
 
-source $ZDOTDIR/completion
+source $ZDOTDIR/completion.zsh
 
 # +---------+
 # | Plugins |
@@ -18,13 +18,17 @@ source ${ZDOTDIR}/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 # +--------+
 # | Prompt |
 # +--------+
-source $ZDOTDIR/prompt
+source $ZDOTDIR/prompt.zsh
 
 # +-------+
 # | Alias |
 # +-------+
-source $ZDOTDIR/aliases
+source $ZDOTDIR/aliases.zsh
 
+# +-----+
+# | Fzf |
+# +-----+
+source $ZDOTDIR/fzf_script.zsh
 
 # +-------+
 # | Other |
