@@ -26,7 +26,7 @@ alias di='docker image'
 alias dv='docker volume'
 
 # coteditor
-alias cot='open /Users/hirotsugu/coteditor/*'
+alias cot="open $HOME/coteditor/*"
 
 # dirs
 alias d='dirs -v'

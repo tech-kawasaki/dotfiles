@@ -1,12 +1,12 @@
 #!/bin/zsh
 
 # clone repository
-DOT_DIR="${HOME}/.dotfiles"
+DOTDIR="${HOME}/.dotfiles"
 GITHUB_URL="https://github.com/tech-kawasaki/dotfiles.git"
 
-if [[ ! -d ${DOT_DIR} ]]; then
+if [[ ! -d ${DOTDIR} ]]; then
     if ! (( $+commands[git] )); then
-        git clone ${GITHUB_URL} ${DOT_DIR}
+        git clone ${GITHUB_URL} ${DOTDIR}
     else
         echo "git required"
         exit 1
@@ -44,7 +44,7 @@ if ! (( $+commands[stow] )); then
     brew install stow
 fi
 
-cd ${DOT_DIR}
+cd ${DOTDIR}
 
 echo "make symbolic link ..."
 stow zsh git
