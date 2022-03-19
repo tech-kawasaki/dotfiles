@@ -49,3 +49,33 @@ fshow() {
                 {}
 FZF-EOF"
 }
+
+fadd() {
+  local out q n addfiles
+  while out=$(
+      git status --short |
+      awk '{if (substr($0,2,1) !~ / /) print $2}' |
+      fzf-tmux --multi --exit-0 --expect=ctrl-d); do
+    q=$(head -1 <<< "$out")
+    n=$[$(wc -l <<< "$out") - 1]
+    addfiles=(`echo $(tail "-$n" <<< "$out")`)
+    [[ -z "$addfiles" ]] && continue
+    if [ "$q" = ctrl-d ]; then
+      git diff --color=always $addfiles | less -R
+    else
+      git add $addfiles
+    fi
+  done
+}
+
+_fzf_complete_pass() {
+  _fzf_complete --ansi -- "$@" < <(
+    local prefix
+    prefix="${PASSWORD_STORE_DIR:-$HOME/.password-store}"
+    tree "$prefix" -f -C | sed -e "s#${prefix}/\{0,1\}##" -e 's#\.gpg##' -e 's#\\#\\\\#'
+  )
+}
+
+_fzf_complete_pass_post() {
+  sed -e "s/.*── //"
+}

@@ -31,9 +31,9 @@ source $ZDOTDIR/aliases.zsh
 source $ZDOTDIR/fzf_scripts.zsh
 [ -f $ZDOTDIR/.fzf.zsh ] && source $ZDOTDIR/.fzf.zsh
 
-# +-------+
-# | Other |
-# +-------+
+# +------------------+
+# | Dotfiles checker |
+# +------------------+
 if test -n "$(git -C ${DOTDIR} status --porcelain)" ||
    ! git -C ${DOTDIR} diff --exit-code --stat --cached origin/main > /dev/null ; then
   echo -e "\e[36m=== DOTFILES IS DIRTY ===\e[m"
