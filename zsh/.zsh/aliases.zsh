@@ -18,6 +18,8 @@ alias gsb='git status -b'
 alias gb='git branch'
 alias gm='git merge'
 alias ga='git add'
+alias gpush='git push'
+alias gpull='git pull'
 
 #docker
 alias dc='docker container'
