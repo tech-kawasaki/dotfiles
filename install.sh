@@ -44,7 +44,9 @@ if ! (( $+commands[brew] )); then
     brew cleanup
 
     # Fzf
-    $(brew --prefix)/opt/fzf/install
+    if [[ $(arch) == arm64 ]]; then
+        $(brew --prefix)/opt/fzf/install
+    fi
 fi
 
 # +---------+

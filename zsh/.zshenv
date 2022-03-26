@@ -10,7 +10,9 @@ export DOTDIR="$HOME/.dotfiles"
 # +------+
 # | Java |
 # +------+
-export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
+if [[ $(arch) == arm64 ]]; then
+    export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
+fi
 
 # +-----+
 # | Fzf |
