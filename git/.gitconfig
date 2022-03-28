@@ -1,5 +1,9 @@
+[core]
+	sshCommand = "ssh -i ~/.ssh/id_ed25519 -F /dev/null"
 [pull]
 	rebase = false
 [user]
 	name = Kawasaki Hirotsugu
 	email = 36406175+tech-kawasaki@users.noreply.github.com
+[includeIf "gitdir:~/corp/"]
+	path = ~/.gitconfig_corp
