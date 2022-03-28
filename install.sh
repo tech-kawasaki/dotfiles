@@ -8,7 +8,7 @@ GITHUB_URL="https://github.com/tech-kawasaki/dotfiles.git"
 
 if [[ ! -d ${DOTDIR} ]]; then
     if (( $+commands[git] )); then
-        git clone ${GITHUB_URL} ${DOTDIR}
+        git clone --recursive ${GITHUB_URL} ${DOTDIR}
     else
         echo "git required"
         exit 1
