@@ -1,6 +1,6 @@
 #!/bin/zsh
 
-// TODO: ssh鍵を設定してない場合はエラーを出す。じゃないと多分git cloneできない
+# TODO: ssh鍵を設定してない場合はエラーを出す。じゃないと多分git cloneできない
 
 # +------------------+
 # | Clone repository |
@@ -60,6 +60,6 @@ fi
 cd ${DOTDIR}
 
 echo "make symbolic link ..."
-stow zsh git
+stow zsh configs
 
 echo "complete!"
