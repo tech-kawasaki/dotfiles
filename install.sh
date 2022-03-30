@@ -1,10 +1,12 @@
 #!/bin/zsh
 
+// TODO: ssh鍵を設定してない場合はエラーを出す。じゃないと多分git cloneできない
+
 # +------------------+
 # | Clone repository |
 # +------------------+
 DOTDIR="${HOME}/.dotfiles"
-GITHUB_URL="https://github.com/tech-kawasaki/dotfiles.git"
+GITHUB_URL="git@github.com:tech-kawasaki/dotfiles.git"
 
 if [[ ! -d ${DOTDIR} ]]; then
     if (( $+commands[git] )); then

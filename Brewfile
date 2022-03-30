@@ -1,6 +1,8 @@
 tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/core"
+# Extendable version manager with support for Ruby, Node.js, Erlang & more
+brew "asdf"
 # Emacs dependency management
 brew "cask"
 # Command-line fuzzy finder written in Go
