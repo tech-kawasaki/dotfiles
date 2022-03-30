@@ -16,7 +16,7 @@ defaults write NSGlobalDomain KeyRepeat -int 2
 defaults write NSGlobalDomain InitialKeyRepeat -int 15
 # スペルの訂正を無効にする
 defaults write -g NSAutomaticSpellingCorrectionEnabled -bool false
-# CapsLock を Ctrl に変更する
+# CapsLock を command に変更する
 keyboard_id="$(ioreg -c AppleEmbeddedKeyboard -r | grep -Eiw "VendorID|ProductID" | awk '{ print $4 }' | paste -s -d'-\n' -)-0"
 defaults -currentHost write -g com.apple.keyboard.modifiermapping.${keyboard_id} -array-add "
 <dict>

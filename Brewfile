@@ -37,6 +37,8 @@ cask "google-chrome"
 cask "iterm2"
 # Interface for reading and syncing eBooks
 cask "kindle"
+# Native app email client for Gmail
+cask "mimestream"
 # App to write, plan, collaborate, and get organized
 cask "notion"
 # Move and resize windows using keyboard shortcuts or snap areas

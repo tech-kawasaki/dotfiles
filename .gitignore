@@ -1,4 +1,5 @@
 zsh/.zsh/.zcompdump
+zsh/.zsh/.zcompcache
 zsh/.zsh/.zsh_history
 Brewfile.lock.json
 git/.config/iterm2/
