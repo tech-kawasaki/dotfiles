@@ -10,12 +10,6 @@ brew "fzf"
 # Distributed revision control system
 brew "git"
 # Open source programming language to build simple/reliable/efficient software
-brew "go"
-# Development kit for the Java programming language
-brew "openjdk"
-# Open-source build automation tool based on the Groovy and Kotlin DSL
-brew "gradle"
-# HTTP/2 C Library
 brew "nghttp2"
 # OpenBSD freely-licensed SSH connectivity tools
 brew "openssh"
