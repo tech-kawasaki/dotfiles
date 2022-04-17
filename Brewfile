@@ -1,15 +1,20 @@
 tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/core"
+tap "homebrew/services"
 # Extendable version manager with support for Ruby, Node.js, Erlang & more
 brew "asdf"
+# GNU Transport Layer Security (TLS) Library
+brew "gnutls"
 # Emacs dependency management
 brew "cask"
 # Command-line fuzzy finder written in Go
 brew "fzf"
 # Distributed revision control system
 brew "git"
-# Open source programming language to build simple/reliable/efficient software
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.9"
+# HTTP/2 C Library
 brew "nghttp2"
 # OpenBSD freely-licensed SSH connectivity tools
 brew "openssh"
@@ -21,6 +26,8 @@ brew "stow"
 cask "alfred"
 # Two-factor authentication software
 cask "authy"
+# Missing menulet for Homebrew
+cask "brewlet"
 # Plain-text editor for web pages, program source codes and more
 cask "coteditor"
 # Trains AIs to understand and translate texts
