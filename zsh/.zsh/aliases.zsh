@@ -18,6 +18,7 @@ alias gsb='git status -b'
 alias gb='git branch'
 alias gm='git merge'
 alias ga='git add'
+alias gaa='git add .'
 alias gpush='git push'
 alias gpull='git pull'
 
