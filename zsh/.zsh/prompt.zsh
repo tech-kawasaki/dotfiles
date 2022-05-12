@@ -11,5 +11,5 @@ zstyle ':vcs_info:*' actionformats ' %F{green}[%b%f %a%F{green}]%f'
 
 precmd () { vcs_info }
 
-PROMPT=$'%F{blue}%d%f${vcs_info_msg_0_}
+PROMPT=$'%F{blue}%~%f${vcs_info_msg_0_}
 %B%F{black}> %b%f'
