@@ -23,6 +23,8 @@ alias ga='git add'
 alias gaa='git add .'
 alias gpush='git push'
 alias gpull='git pull'
+alias gstash='git stash'
+alias gstashpop='git stash pop'
 
 #docker
 alias dc='docker container'
