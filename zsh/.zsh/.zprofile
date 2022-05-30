@@ -1,3 +1,1 @@
-if [[ $(arch) == arm64 ]]; then
-    eval "$(/opt/homebrew/bin/brew shellenv)"
-fi
+eval "$($(brew --prefix)/bin/brew shellenv)"

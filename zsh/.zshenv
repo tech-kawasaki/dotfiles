@@ -7,14 +7,6 @@ export ZDOTDIR="$HOME/.zsh"
 # | Dotfiles |
 # +----------+
 export DOTDIR="$HOME/.dotfiles"
-# +------+
-# | Java |
-# +------+
-if [[ $(arch) == arm64 ]]; then
-    export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
-elif [[ $(arch) == i386 ]]; then
-    export PATH="/usr/local/opt/openjdk/bin:$PATH"
-fi
 
 # +-----+
 # | Fzf |

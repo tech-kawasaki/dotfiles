@@ -51,3 +51,13 @@ if test -n "$(git -C ${DOTDIR} status --porcelain)" ||
   echo "  git push origin main"
   echo -e "\e[36m=========================\e[m"
 fi
+
+# +------+
+# | Java |
+# +------+
+export PATH="$(brew --prefix)/opt/openjdk/bin:$PATH"
+
+# +------+
+# | Node |
+# +------+
+export PATH="$(brew --prefix)/opt/node@14/bin:$PATH"

@@ -1,29 +1,13 @@
-if [[ $(arch) == arm64 ]]; then
-  # Setup fzf
-  # ---------
-  if [[ ! "$PATH" == */opt/homebrew/opt/fzf/bin* ]]; then
-    export PATH="${PATH:+${PATH}:}/opt/homebrew/opt/fzf/bin"
-  fi
-
-  # Auto-completion
-  # ---------------
-  [[ $- == *i* ]] && source "/opt/homebrew/opt/fzf/shell/completion.zsh" 2> /dev/null
-
-  # Key bindings
-  # ------------
-  source "/opt/homebrew/opt/fzf/shell/key-bindings.zsh"
-elif [[ $(arch) == i386 ]]; then
-    # Setup fzf
-  # ---------
-  if [[ ! "$PATH" == */usr/local/opt/fzf/bin* ]]; then
-    export PATH="${PATH:+${PATH}:}/opt/homebrew/opt/fzf/bin"
-  fi
-
-  # Auto-completion
-  # ---------------
-  [[ $- == *i* ]] && source "/usr/local/opt/fzf/shell/completion.zsh" 2> /dev/null
-
-  # Key bindings
-  # ------------
-  source "/usr/local/opt/fzf/shell/key-bindings.zsh"
+# Setup fzf
+# ---------
+if [[ ! "$PATH" == *$(brew --prefix)/opt/fzf/bin* ]]; then
+  export PATH="${PATH:+${PATH}:}$(brew --prefix)/opt/fzf/bin"
 fi
+
+# Auto-completion
+# ---------------
+[[ $- == *i* ]] && source "$(brew --prefix)/opt/fzf/shell/completion.zsh" 2> /dev/null
+
+# Key bindings
+# ------------
+source "$(brew --prefix)/opt/fzf/shell/key-bindings.zsh"
