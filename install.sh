@@ -1,6 +1,6 @@
 #!/bin/zsh
 
-# TODO: ssh鍵を設定してない場合はエラーを出す。じゃないと多分git cloneできない
+# TODO: Throw error if ssh-key is't configured.
 
 # +------------------+
 # | Clone repository |
@@ -40,6 +40,9 @@ if ! (( $+commands[brew] )); then
 
     echo "run brew upgrade ..."
     brew upgrade
+
+    # disable default emacs
+    brew unlink emacs
 
     brew bundle
 
