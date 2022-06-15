@@ -45,10 +45,6 @@ if test -n "$(git -C ${DOTDIR} status --porcelain)" ||
   echo -e "\e[36m=== DOTFILES IS DIRTY ===\e[m"
   echo -e "\e[33mThe dotfiles have been changed.\e[m"
   echo -e "\e[33mPlease update them with the following command.\e[m"
-  echo "  cd ${DOTDIR}"
-  echo "  git add ."
-  echo "  git commit -m \"update dotfiles\""
-  echo "  git push origin main"
   echo -e "\e[36m=========================\e[m"
 fi
 
@@ -61,3 +57,8 @@ export PATH="$(brew --prefix)/opt/openjdk/bin:$PATH"
 # | Node |
 # +------+
 export PATH="$(brew --prefix)/opt/node@14/bin:$PATH"
+
+# +------------+
+# | Doom Emacs |
+# +------------+
+export PATH="$HOME/.emacs.d/bin:$PATH"

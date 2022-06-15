@@ -60,6 +60,13 @@ fi
 cd ${DOTDIR}
 
 echo "make symbolic link ..."
-stow zsh configs
+stow zsh configs emacs
+
+# +------------+
+# | Doom Emacs |
+# +------------+
+$HOME/.emacs.d/bin/doom install
+$HOME/.emacs.d/bin/doom sync
+$HOME/.emacs.d/bin/doom doctor
 
 echo "complete!"

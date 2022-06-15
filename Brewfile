@@ -1,39 +1,60 @@
 tap "homebrew/bundle"
 tap "homebrew/cask"
+tap "homebrew/cask-fonts"
 tap "homebrew/core"
-tap "homebrew/services"
+tap "railwaycat/emacsmacport"
 # Extendable version manager with support for Ruby, Node.js, Erlang & more
 brew "asdf"
 # GNU Transport Layer Security (TLS) Library
 brew "gnutls"
+# GNU Emacs text editor
+brew "emacs"
 # Emacs dependency management
 brew "cask"
 # Command-line fuzzy finder written in Go
 brew "fzf"
 # Distributed revision control system
 brew "git"
+# GNU Pretty Good Privacy (PGP) package
+brew "gnupg"
+# Open source programming language to build simple/reliable/efficient software
+brew "go"
+# Development kit for the Java programming language
+brew "openjdk"
+# Open-source build automation tool based on the Groovy and Kotlin DSL
+brew "gradle"
 # Interpreted, interactive, object-oriented programming language
 brew "python@3.9"
+# Provides library functionality for FIDO U2F & FIDO 2.0, including USB
+brew "libfido2"
 # HTTP/2 C Library
 brew "nghttp2"
+# Platform built on V8 to build network applications
+brew "node@14"
 # OpenBSD freely-licensed SSH connectivity tools
 brew "openssh"
 # Password manager
 brew "pass"
+# Search tool like grep and The Silver Searcher
+brew "ripgrep"
 # Organize software neatly under a single directory tree (e.g. /usr/local)
 brew "stow"
+# YAMAMOTO Mitsuharu's Mac port of GNU Emacs
+brew "railwaycat/emacsmacport/emacs-mac", link: false
 # Application launcher and productivity software
 cask "alfred"
 # Two-factor authentication software
 cask "authy"
-# Missing menulet for Homebrew
-cask "brewlet"
 # Plain-text editor for web pages, program source codes and more
 cask "coteditor"
 # Trains AIs to understand and translate texts
 cask "deepl"
 # App to build and share containerized applications and microservices
 cask "docker"
+# Japanese programming font which is a composed of Hack and GenJyuu-Gothic
+cask "font-hackgen"
+# Japanese programming font which is a composed of Hack and GenJyuu-Gothic
+cask "font-hackgen-nerd"
 # Web browser
 cask "google-chrome"
 # Terminal emulator as alternative to Apple's Terminal app
@@ -52,5 +73,8 @@ cask "slack"
 cask "spotify"
 # Editor for designing and documenting APIs
 cask "stoplight-studio"
+cask "via"
 # Open-source code editor
 cask "visual-studio-code"
+# JavaScript IDE
+cask "webstorm"
