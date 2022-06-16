@@ -8,7 +8,8 @@ alias mv='mv -i'
 
 # git
 alias g='git'
-alias gf= 'g fetch'
+alias gdiff='git diff'
+alias gf= 'git fetch --prune'
 alias gt="git log --graph --pretty=format:'%x09%C(auto) %h %Cgreen %ar %Creset%x09by\"%C(cyan ul)%an%Creset\" %x09%C(auto)%s %d'"
 alias gta='gt --all'
 alias gco='git checkout'
@@ -22,7 +23,7 @@ alias gm='git merge'
 alias ga='git add'
 alias gaa='git add .'
 alias gpush='git push'
-alias gpull='git pull'
+alias gpull='git pull --prune'
 alias gstash='git stash'
 alias gstashpop='git stash pop'
 
