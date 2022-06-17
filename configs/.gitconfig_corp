@@ -2,6 +2,8 @@
 	sshCommand = "ssh -i ~/.ssh/id_rsa -F /dev/null"
 [pull]
 	rebase = false
+[fetch]
+    prune = true
 [user]
 	name = Kawasaki Hirotsugu
 	email = 54827948+kawasaki-axis@users.noreply.github.com

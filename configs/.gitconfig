@@ -1,5 +1,7 @@
 [core]
 	sshCommand = "ssh -i ~/.ssh/id_ed25519 -F /dev/null"
+[fetch]
+	prune = true
 [pull]
 	rebase = false
 [user]
