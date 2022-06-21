@@ -68,6 +68,7 @@ stow zsh configs emacs
 # +------------+
 # | Doom Emacs |
 # +------------+
+ln -s $(brew --prefix)/Emacs.app /Applications/Emacs.app
 $HOME/.emacs.d/bin/doom install
 $HOME/.emacs.d/bin/doom sync
 $HOME/.emacs.d/bin/doom doctor
