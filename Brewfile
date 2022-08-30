@@ -3,14 +3,18 @@ tap "homebrew/cask"
 tap "homebrew/cask-fonts"
 tap "homebrew/core"
 tap "railwaycat/emacsmacport"
+# Library for manipulating PNG images
+brew "libpng"
 # Extendable version manager with support for Ruby, Node.js, Erlang & more
 brew "asdf"
 # GNU Transport Layer Security (TLS) Library
 brew "gnutls"
 # GNU Emacs text editor
-brew "emacs"
+brew "emacs", link: false
 # Emacs dependency management
 brew "cask"
+# Dependency Manager for PHP
+brew "composer"
 # Command-line fuzzy finder written in Go
 brew "fzf"
 # Distributed revision control system
@@ -29,18 +33,20 @@ brew "python@3.9"
 brew "libfido2"
 # HTTP/2 C Library
 brew "nghttp2"
-# Platform built on V8 to build network applications
-brew "node@14"
 # OpenBSD freely-licensed SSH connectivity tools
 brew "openssh"
 # Password manager
 brew "pass"
+# General-purpose scripting language
+brew "php@8.0"
 # Search tool like grep and The Silver Searcher
 brew "ripgrep"
 # Organize software neatly under a single directory tree (e.g. /usr/local)
 brew "stow"
+# JavaScript toolchain manager for reproducible environments
+brew "volta"
 # YAMAMOTO Mitsuharu's Mac port of GNU Emacs
-brew "railwaycat/emacsmacport/emacs-mac", link: false
+brew "railwaycat/emacsmacport/emacs-mac"
 # Application launcher and productivity software
 cask "alfred"
 # Two-factor authentication software

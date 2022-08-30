@@ -1,3 +1,8 @@
+# +----------+
+# | Homebrew |
+# +----------+
+export PATH="/usr/local/sbin:$PATH"
+
 # +------------+
 # | Completion |
 # +------------+
@@ -25,6 +30,11 @@ source $ZDOTDIR/prompt.zsh
 # +-------+
 source $ZDOTDIR/aliases.zsh
 
+# +-------------------+
+# | Untracked Setting |
+# +-------------------+
+[ -f $HOME/.zsh_local ] && source $HOME/.zsh_local
+
 # +-----+
 # | Fzf |
 # +-----+
@@ -37,6 +47,12 @@ source $ZDOTDIR/fzf_scripts.zsh
 source $(brew --prefix asdf)/libexec/asdf.sh
 source $(brew --prefix)/share/zsh/site-functions
 
+# +-------+
+# | Volta |
+# +-------+
+export VOLTA_HOME="$HOME/.volta"
+export PATH="$VOLTA_HOME/bin:$PATH"
+
 # +------------------+
 # | Dotfiles checker |
 # +------------------+
@@ -48,17 +64,20 @@ if test -n "$(git -C ${DOTDIR} status --porcelain)" ||
   echo -e "\e[36m=========================\e[m"
 fi
 
+# +----+
+# | GO |
+# +----+
+export GOPATH="$HOME/go"
+export PATH="$GOPATH/bin:$PATH"
+
 # +------+
 # | Java |
 # +------+
 export PATH="$(brew --prefix)/opt/openjdk/bin:$PATH"
 
-# +------+
-# | Node |
-# +------+
-export PATH="$(brew --prefix)/opt/node@14/bin:$PATH"
-
 # +------------+
 # | Doom Emacs |
 # +------------+
 export PATH="$HOME/.emacs.d/bin:$PATH"
+export VOLTA_HOME="$HOME/.volta"
+export PATH="$VOLTA_HOME/bin:$PATH"
