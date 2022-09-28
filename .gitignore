@@ -4,3 +4,4 @@ zsh/.zsh/.zsh_history
 Brewfile.lock.json
 configs/.config/iterm2/
 configs/.config/configstore/
+zsh/.zsh/.zsh_sessions/
