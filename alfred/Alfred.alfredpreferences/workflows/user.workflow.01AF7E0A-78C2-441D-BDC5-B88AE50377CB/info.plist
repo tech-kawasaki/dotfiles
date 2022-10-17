@@ -29,7 +29,7 @@
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
-	<string>Launch coteditor from hotkey</string>
+	<string>Launch emacs from hotkey</string>
 	<key>objects</key>
 	<array>
 		<dict>
@@ -68,7 +68,7 @@
 			<dict>
 				<key>paths</key>
 				<array>
-					<string>/Applications/CotEditor.app</string>
+					<string>/Applications/Emacs.app</string>
 				</array>
 				<key>toggle</key>
 				<true/>
