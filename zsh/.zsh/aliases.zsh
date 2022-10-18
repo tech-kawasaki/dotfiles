@@ -33,9 +33,6 @@ alias d-c='docker compose'
 alias di='docker image'
 alias dv='docker volume'
 
-# coteditor
-alias cot="open $HOME/coteditor/*"
-
 # dirs
 alias d='dirs -v'
 for index ({1..9}) alias "$index"="cd +${index}"; unset index
