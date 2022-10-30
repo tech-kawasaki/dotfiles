@@ -14,6 +14,8 @@ GITHUB_URL="git@github.com:tech-kawasaki/dotfiles.git"
 if [[ ! -d ${DOTDIR} ]]; then
     if (( $+commands[git] )); then
         git clone --recursive ${GITHUB_URL} ${DOTDIR}
+        if [ $? -ne 0 ]; then
+            echo "Failed to clone dotfiles. Do you have ssh key to github.com?"
     else
         echo "git required"
         exit 1
