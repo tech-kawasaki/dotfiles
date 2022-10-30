@@ -1,7 +1,9 @@
 #!/bin/zsh
 
-# TODO: Throw error if ssh-key is't configured.
-ssh -T git@githu.com || {echo "Failed to access github.com. Please configure ssh key."; exit 1;}
+if [[ ! -d ${HOME}/.ssh ]]; then
+    echo "please configure ssh key"
+    exit 1
+fi
 
 # +------------------+
 # | Clone repository |
