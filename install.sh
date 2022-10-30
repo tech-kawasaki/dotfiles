@@ -33,23 +33,22 @@ fi
 if ! (( $+commands[brew] )); then
     echo "installing Homebrew ..."
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-
-    echo "run brew doctor ..."
-    which brew >/dev/null 2>&1 && brew doctor
-
-    echo "run brew update ..."
-    which brew >/dev/null 2>&1 && brew update
-
-    echo "run brew upgrade ..."
-    brew upgrade
-
-    brew bundle
-
-    brew cleanup
-
-    # Fzf
-    $(brew --prefix)/opt/fzf/install
 fi
+
+echo "run brew doctor ..."
+which brew >/dev/null 2>&1 && brew doctor
+
+echo "run brew update ..."
+which brew >/dev/null 2>&1 && brew update
+
+brew upgrade
+brew bundle
+brew cleanup
+
+# +-----+
+# | Fzf |
+# +-----+
+$(brew --prefix)/opt/fzf/install
 
 # +---------+
 # | Symlink |
