@@ -1,10 +1,5 @@
 #!/bin/zsh
 
-if [[ ! -d ${HOME}/.ssh ]]; then
-    echo "please configure ssh key"
-    exit 1
-fi
-
 # +------------------+
 # | Clone repository |
 # +------------------+
