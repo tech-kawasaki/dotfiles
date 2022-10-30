@@ -41,9 +41,6 @@ if ! (( $+commands[brew] )); then
     echo "run brew upgrade ..."
     brew upgrade
 
-    # disable default emacs
-    brew unlink emacs
-
     brew bundle
 
     brew cleanup

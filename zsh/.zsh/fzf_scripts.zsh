@@ -2,14 +2,6 @@
 # | Directories, Files |
 # +--------------------+
 
-# Another fd - cd into the selected directory
-# This one differs from the above, by only showing the sub directories and not
-#  showing the directories within those.
-fd() {
-  local dir
-  dir=$(find ${1:-.} -maxdepth 1 -type d 2> /dev/null | fzf +m) && cd "$dir"
-}
-
 # fdr - cd to selected parent directory
 fdr() {
   local declare dirs=()

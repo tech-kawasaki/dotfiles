@@ -45,8 +45,7 @@
 ;; option+¥をコマンドではなく\として認識する
 (define-key global-map [?\M-¥] [?\\])
 
-;; 等幅フォントのHackGenNerdを設定
-(set-face-attribute 'default nil :family "HackGenNerd" :height 140)
+(set-face-attribute 'default nil :family "HackGen" :height 140)
 
 ;; normal-modeになったら強制的に英語入力へ
 (defun my-evil-normal-state-entry-hook ()
