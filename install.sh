@@ -16,6 +16,8 @@ if [[ ! -d ${DOTDIR} ]]; then
         git clone --recursive ${GITHUB_URL} ${DOTDIR}
         if [ $? -ne 0 ]; then
             echo "Failed to clone dotfiles. Do you have ssh key to github.com?"
+            exit 1
+        fi
     else
         echo "git required"
         exit 1
