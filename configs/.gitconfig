@@ -7,5 +7,3 @@
 [user]
 	name = Kawasaki Hirotsugu
 	email = 36406175+tech-kawasaki@users.noreply.github.com
-[includeIf "gitdir:~/corp/"]
-	path = ~/.gitconfig_corp

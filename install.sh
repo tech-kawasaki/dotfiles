@@ -53,11 +53,6 @@ $(brew --prefix)/opt/fzf/install
 # +---------+
 # | Symlink |
 # +---------+
-if ! (( $+commands[stow] )); then
-    echo "installing GNU Stow ..."
-    brew install stow
-fi
-
 cd ${DOTDIR}
 
 echo "make symbolic link ..."
