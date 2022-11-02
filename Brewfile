@@ -4,8 +4,6 @@ tap "homebrew/cask-fonts"
 tap "homebrew/core"
 tap "homebrew/services"
 tap "railwaycat/emacsmacport"
-# Extendable version manager with support for Ruby, Node.js, Erlang & more
-brew "asdf"
 # Command-line interface for SQLite
 brew "sqlite"
 # Interpreted, interactive, object-oriented programming language
@@ -44,8 +42,6 @@ brew "libfido2"
 brew "libxml2"
 # HTTP/2 C Library
 brew "nghttp2"
-# Platform built on V8 to build network applications
-brew "node@14"
 # Development kit for the Java programming language
 brew "openjdk"
 # OpenBSD freely-licensed SSH connectivity tools
@@ -66,12 +62,6 @@ cask "alfred"
 cask "authy"
 # Tool to flash OS images to SD cards & USB drives
 cask "balenaetcher"
-# Missing menulet for Homebrew
-cask "brewlet"
-# Plain-text editor for web pages, program source codes and more
-cask "coteditor"
-# Trains AIs to understand and translate texts
-cask "deepl"
 # App to build and share containerized applications and microservices
 cask "docker"
 # Japanese programming font which is a composed of Hack and GenJyuu-Gothic
@@ -82,25 +72,9 @@ cask "font-hackgen-nerd"
 cask "google-chrome"
 # Terminal emulator as alternative to Apple's Terminal app
 cask "iterm2"
-# Interface for reading and syncing eBooks
-cask "kindle"
-# Native app email client for Gmail
-cask "mimestream"
-# App to write, plan, collaborate, and get organized
-cask "notion"
 # Move and resize windows using keyboard shortcuts or snap areas
 cask "rectangle"
-# Team communication and collaboration software
-cask "slack"
-# Music streaming service
-cask "spotify"
 # Editor for designing and documenting APIs
 cask "stoplight-studio"
-# Keyboard configurator
-cask "via"
 # Open-source code editor
 cask "visual-studio-code"
-# JavaScript IDE
-cask "webstorm"
-# Video communication and virtual meeting platform
-cask "zoom"
