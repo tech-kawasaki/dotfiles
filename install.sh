@@ -33,6 +33,10 @@ fi
 if ! (( $+commands[brew] )); then
     echo "installing Homebrew ..."
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+    # Set homebrew's PATH for M1 mac
+    if [[ $(arch) == arm64 ]]; then
+        eval "$(/opt/homebrew/bin/brew shellenv)"
+    fi
 fi
 
 echo "run brew doctor ..."
