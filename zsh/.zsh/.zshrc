@@ -41,12 +41,6 @@ source $ZDOTDIR/aliases.zsh
 source $ZDOTDIR/fzf_scripts.zsh
 [ -f $ZDOTDIR/.fzf.zsh ] && source $ZDOTDIR/.fzf.zsh
 
-# +------+
-# | asdf |
-# +------+
-source $(brew --prefix asdf)/libexec/asdf.sh
-source $(brew --prefix)/share/zsh/site-functions
-
 # +-------+
 # | Volta |
 # +-------+
