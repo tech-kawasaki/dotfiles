@@ -68,8 +68,6 @@ cask "docker"
 cask "font-hackgen"
 # Japanese programming font which is a composed of Hack and GenJyuu-Gothic
 cask "font-hackgen-nerd"
-# Web browser
-cask "google-chrome"
 # Terminal emulator as alternative to Apple's Terminal app
 cask "iterm2"
 # Move and resize windows using keyboard shortcuts or snap areas
