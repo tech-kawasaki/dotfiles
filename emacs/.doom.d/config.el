@@ -53,6 +53,9 @@
 (add-hook 'evil-normal-state-entry-hook 'my-evil-normal-state-entry-hook)
 (add-hook 'window-setup-hook 'my-evil-normal-state-entry-hook)
 
+(after! org (setq org-todo-keywords
+  '((sequence "TODO(t)" "WIP(w)"  "|" "DONE(d)" "CANCELED(c)"))))
+
 ;; Whenever you reconfigure a package, make sure to wrap your config in an
 ;; `after!' block, otherwise Doom's defaults may override your settings. E.g.
 ;;
